@@ -35,12 +35,7 @@
             <button id='btn-save-label'>save annotation</button>
         </div>
 
-        <!-- <div class='box-unit'>
-            <label for="file">
-                <span>Select your file</span>
-                <input type="file" name='file'>
-            </label>
-        </div> -->
+        
 
 
         <div id='label_edit' class='box-unit'>
@@ -58,70 +53,42 @@
         </div>
     </div>
 
-    <!-- editor, list container -->
-    <div style="position:absolute;" id="editor-window">
-        <canvas style="position:absolute;" id='mainCanvas' width="1024" height="1024"></canvas>
-
-        <ul class='box-unit list-container-1' id = 'file-list-container-img'></ul>
-        <ul class='box-unit list-container-1 hide' id = 'file-list-container-voc'></ul>
+    <div>
+        <canvas id='mainCanvas' ref="can" width="1024" height="1024"></canvas>
     </div>
+
+    <!-- <Editor /> -->
 
 </template>
 
 
 <script>
-// fabric.min.js
-// fabric-history.js
+import {fabric} from 'fabric'
+
 
 export default {
-    
+    name: 'img_labeler',
+
+    data() {
+        return {
+            
+        }
+    },
+    mounted() {
+        const ref = this.$refs.can;
+        const canvas = new fabric.Canvas(ref);
+        const rect = new fabric.Rect({
+            fill: '',
+            stroke: 'blue',
+            width: 66,
+            height: 66
+        });
+        canvas.add(rect);
+    }
 }
 </script>
 
 
 <style>
-.hide {
-    display: none;
-}
-
-.box-unit {
-    margin: 8px;
-    padding: 4px;
-    border: 1px solid rgba(0, 0, 0);
-}
-
-.box-unit button {
-    margin: 4px;
-}
-
-.file-list-container {
-    position: absolute;
-    width: 128px;
-    height: 64px;
-}
-
-li {
-    list-style: none;
-}
-
-li.selected {
-    color: white;
-    background-color: black;
-}
-
-.list-container-1 {
-    position: absolute;
-    width: 240px;
-    height: 480px;
-    transform: translate(1024px, -1024px)
-}
-
-#wait-window {
-    position: absolute;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
+    @import '../assets/scss/core.scss'
 </style>
