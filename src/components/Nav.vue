@@ -9,6 +9,7 @@
       <li><a><router-link to="./project_mng">project_mng</router-link></a></li>
       <li><a><router-link to="./trainer">trainer</router-link></a></li>
       <li><a><router-link to="./help">help</router-link></a></li>
+      <li><a><router-link to="./todo">todo</router-link></a></li>
     </ul>
   </div>
 </template>

@@ -42,6 +42,11 @@ const routes = [
         name: 'help',
         component: () => import('@/views/Help')
     },
+    {
+        path: '/todo',
+        name: 'todo',
+        component: () => import('@/views/todo')
+    }
 ];
 
 export const router = createRouter({
