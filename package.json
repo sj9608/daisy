@@ -9,9 +9,16 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "fabric": "^4.5.1",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1",
+    "node-static": "^0.7.11",
     "sass": "^1.35.1",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.10"
+    "vue-router": "^4.0.10",
+    "xml-formatter": "^2.4.0",
+    "xml-js": "^1.6.11",
+    "yaml": "^1.10.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
