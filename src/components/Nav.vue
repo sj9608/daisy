@@ -22,23 +22,5 @@ export default {
 
 
 <style>
-.navigation {
-  background-color:gray;
-  border: 5px;
-  border-radius: 5px;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-
-}
-
-li a {
-  text-decoration: none;
-  color: white;
-}
+@import '../assets/scss/nav.scss'
 </style>
