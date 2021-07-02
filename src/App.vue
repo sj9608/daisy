@@ -17,13 +17,5 @@ export default {
 </script>
 
 <style>
-ul {
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-  margin: 8px;
-}
-
+@import "./assets/scss/nav.scss";
 </style>
