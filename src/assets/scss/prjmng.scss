@@ -7,6 +7,21 @@ body {
   font-size: x-large;
 }
 
+#prj_list a {
+  background: white;
+  color: black;
+  transition: background 0.25s ease-in;
+  transition: color 0.25s ease-in;
+}
+
+#prj_list a:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: background 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+
 .detail_button {
     background: whitesmoke;
     border-radius: 4px;
@@ -15,7 +30,6 @@ body {
     width: 5cm;
     font-family: sans-serif;
     font-size: 1rem;
-
 }
 
 .button {
