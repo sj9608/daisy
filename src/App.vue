@@ -18,4 +18,6 @@ export default {
 
 <style>
 @import "./assets/scss/nav.scss";
+@import "./assets/scss/prjmng2.scss";
+@import "./assets/scss/input_box.scss";
 </style>
