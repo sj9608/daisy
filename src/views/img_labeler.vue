@@ -90,5 +90,5 @@ export default {
 
 
 <style>
-    @import '../assets/scss/core.scss'
+    /* @import '../assets/scss/core.scss' */
 </style>

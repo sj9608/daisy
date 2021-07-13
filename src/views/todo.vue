@@ -222,5 +222,5 @@ export default {
 
 <style>
 @import "../assets/scss/core.scss";
-@import "../assets/scss/prjmng.scss";
+/* @import "../assets/scss/prjmng.scss"; */
 </style>
